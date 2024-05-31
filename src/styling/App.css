@@ -63,9 +63,68 @@ nav a:hover {
   background-color: #ff4d4d;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
-  .main-content {
+  .about-container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    position: static;
+    left: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
+    padding: 1em;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-me-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-me-text p,
+  .about-me-text h2,
+  .about-me-text h3 {
+    text-align: center;
+  }
+
+  .about-me-text p {
+    font-size: 1em;
+  }
+
+  .about-me-text h2 {
+    font-size: 2em;
+  }
+
+  .about-me-text h3 {
+    font-size: 1.2em;
+  }
+
+  .about-me-image img {
+    max-width: 150px;
+  }
+
+  .resume-container {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .resume {
+    width: 100%;
+    height: auto;
   }
 }
