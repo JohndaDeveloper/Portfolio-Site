@@ -1,0 +1,21 @@
+.projects-container {
+  display: flex;
+}
+
+h2 {
+  font-size: 2em;
+  margin-left: 50px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.project-card {
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 30px;
+}
