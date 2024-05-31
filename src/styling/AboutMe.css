@@ -1,3 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  color: black;
+  padding: 0.2em;
+  text-align: center;
+  font-size: smaller;
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  padding: 2em 0;
+}
+
+nav a {
+  margin: 0 1em;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume {
+  width: 75%;
+  height: 125vh;
+  border: none;
+}
+
+.close-button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 1em;
+}
+
+.close-button:hover {
+  background-color: #ff4d4d;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -27,8 +92,9 @@
 
 .about-me-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Change to row for full view */
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   width: 100%;
   text-align: center;
@@ -75,6 +141,7 @@
   margin-bottom: 1em; /* Add margin for spacing */
   display: flex;
   justify-content: center;
+  margin-right: 1em; /* Add margin to separate from text */
 }
 
 .about-me-image img {
@@ -107,7 +174,7 @@
   }
 
   .about-me-content {
-    flex-direction: column;
+    flex-direction: column; /* Change to column for mobile view */
     align-items: center;
     width: 100%;
   }
@@ -133,6 +200,10 @@
 
   .about-me-text h3 {
     font-size: 1.2em;
+  }
+
+  .about-me-image {
+    margin-right: 0; /* Remove margin in mobile view */
   }
 
   .about-me-image img {
